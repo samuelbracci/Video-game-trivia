@@ -1,0 +1,174 @@
+/* styles.css */
+
+/* Theme variables */
+:root {
+  --bg: #0a0a0a;
+  --surface: #111216;
+  --text: #ffffff;
+  --muted: #b8b8b8;
+  --accent: #e50914;      /* Red header */
+  --accent-dark: #b50710; /* Hover/darken */
+  --outline: #2a2a2a;
+  --option-bg: #14161c;
+  --option-hover: #1b1e26;
+  --option-active: #222635;
+  --badge-bg: #252836;
+  --badge-text: #e0e3ff;
+  --focus: #3d7bfd;
+}
+
+/* Base reset and typography */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* App layout */
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: clamp(16px, 3vw, 24px);
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-family: "Russo One", Inter, sans-serif;
+  font-size: clamp(24px, 3.2vw, 40px);
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+/* Main content */
+.main {
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 3vw, 32px);
+}
+
+.card {
+  width: min(800px, 92vw);
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  padding: clamp(16px, 3.2vw, 28px);
+}
+
+/* Question area */
+.question {
+  background: #0f1014;
+  border: 1px solid var(--outline);
+  border-radius: 10px;
+  padding: clamp(16px, 3vw, 24px);
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.placeholder {
+  font-size: clamp(18px, 2.2vw, 24px);
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Options grid */
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(12px, 2vw, 18px);
+  margin-top: clamp(16px, 3vw, 24px);
+}
+
+@media (max-width: 640px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  border: 1px solid var(--outline);
+  border-radius: 10px;
+  background: var(--option-bg);
+  color: var(--text);
+  padding: 14px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 140ms ease, transform 80ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.option .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.option .label {
+  font-size: clamp(16px, 1.9vw, 18px);
+  font-weight: 600;
+}
+
+/* Interactions */
+.option:hover {
+  background: var(--option-hover);
+  border-color: #3a3a3a;
+}
+
+.option:active {
+  background: var(--option-active);
+  transform: translateY(1px);
+}
+
+.option:focus {
+  outline: none;
+  border-color: var(--focus);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--focus) 40%, transparent);
+}
+
+/* Footer */
+.footer {
+  padding: 12px 16px;
+  color: var(--muted);
+  text-align: center;
+  border-top: 1px solid var(--outline);
+}
+
+.credits {
+  margin: 0;
+  font-size: 14px;
+}

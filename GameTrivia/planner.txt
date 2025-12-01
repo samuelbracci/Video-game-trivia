@@ -3,71 +3,71 @@ Questions should range from having most be easy and general knowledge with maybe
 
 
 //Trivia questions:
-#1:
-A:
-B:
-C:
-D:
+#1:What color is Pikachu from Pokemon?
+A:Blue
+B:Orange
+C:Yellow
+D:Black
 
-#2:
-A:
-B:
-C:
-D:
+#2:What is the most sold video game of all time?
+A:Minecraft
+B:Persona 5 
+C:GTA 5
+D:Skyrim
 
-#3:
-A:
-B:
-C:
-D:
+#3:What console does Sony make? 
+A:Switch
+B:Steam Deck
+C:Xbox
+D:Playstation
 
-#4:
-A:
-B:
-C:
-D:
+#4:What was the first video game ever created? 
+A:Tennis for Two
+B:Donkey Kong
+C:Super Mario Bros
+D:Pong
 
-#5:
-A:
-B:
-C:
-D:
+#5:Which was the first ever video game console ever made and sold commercially?
+A:NES (Nintendo Entertainment System)
+B:Magnavox Odyssey
+C:Atari
+D:Gameboy
 
-#6:
-A:
-B:
-C:
-D:
+#6:What is Sonics signature ability?
+A:To cast magic powers
+B:To jump high and stomp on enemies
+C:To run really fast
+D:To play poker really well
 
-#7:
-A:
-B:
-C:
-D:
+#7:What is Marios profession?
+A:Chef
+B:Accountant
+C:Plumber
+D:Prince
 
-#8:
-A:
-B:
-C:
-D:
+#8:Which of these video game series is known to be very hard?
+A:Dark Souls
+B:Kirby
+C:Minecraft
+D:Mario
 
-#9:
-A:
-B:
-C:
-D:
+#9:Which game first introduced the character Waluigi?
+A:Mario party 3
+B:Mario Tennis
+C:Mario Kart: Double Dash
+D:Super Smash Bros Melee
 
-#10:
-A:
-B:
-C:
-D:
+#10:What color is most associated with Nintendos brand?
+A:Dark Blue
+B:Green
+C:Yellow
+D:Red
 
-#11:
-A:
-B:
-C:
-D:
+#11:Which of the follow is NOT a Nintendo console
+A:Switch
+B:Gamecube
+C:Xbox
+D:Wii
 
 #12:
 A:

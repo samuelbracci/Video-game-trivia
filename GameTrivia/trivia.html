@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="trivia.css">
-    <title>Trivia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Game Trivia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="trivia.css" />
 </head>
 <body>
-    <h1>Hello World</h1>
-    <script src="trivia.js"></script>
+  <div class="app">
+    <header class="header" role="banner">
+      <h1 class="title">Video Game Trivia</h1>
+    </header>
+
+    <main class="main" role="main">
+      <section class="card" aria-labelledby="question-label">
+        <div class="question" id="question-label">
+          <span class="placeholder">Welcome to the Video Game Trivia website!</span>
+        </div>
+
+        <div class="options" role="group" aria-label="Answer choices">
+          <!-- Option A -->
+          <button class="option" type="button" data-choice="A" aria-label="Choice A">
+            <span class="badge">A:</span>
+            <span class="label">Start the game</span>
+          </button>
+
+          <!-- Option B -->
+          <button class="option" type="button" data-choice="B" aria-label="Choice B">
+            <span class="badge">B:</span>
+            <span class="label">Add your own questions</span>
+          </button>
+
+          <!-- Option C -->
+          <button class="option" type="button" data-choice="C" aria-label="Choice C">
+            <span class="badge">C:</span>
+            <span class="label">------</span>
+          </button>
+
+          <!-- Option D -->
+          <button class="option" type="button" data-choice="D" aria-label="Choice D">
+            <span class="badge">D:</span>
+            <span class="label">------</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p class="credits">© 2025 Video Game Trivia</p>
+    </footer>
+  </div>
 </body>
 </html>
