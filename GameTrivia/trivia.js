@@ -46,7 +46,7 @@ let questions = [
     },
     {
         question: "Which game first introduced the character Waluigi?",
-        options: ["Mario party 3", "Mario Tennis", "Mario Kart: Double Dash", "Super Smash Bros Melee"],
+        options: ["Mario Party 3", "Mario Tennis", "Mario Kart: Double Dash", "Super Smash Bros Melee"],
         answer: "Mario Tennis"
     },
     {
@@ -81,3 +81,13 @@ let questions = [
     }
 ]
 
+function getQuestions(questions, num = 10) {
+    const shuffle = [...questions]
+    for (let i = shuffle.length - 1; i > 0; i--) {
+        const position = Math.floor(Math.random() * (i + 1));
+        [shuffle[i], shuffle[position]] = [shuffle[position], shuffle[i]]
+    }
+    return shuffle.slice(0, num)
+};
+
+console.log(getQuestions(questions, 10))
