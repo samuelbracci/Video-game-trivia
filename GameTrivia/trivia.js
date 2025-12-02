@@ -2,6 +2,19 @@
 
 const getElement = selector => document.querySelector(selector);
 
+//DOM elements
+const startButton = document.querySelector("#start-btn")
+const addButton = document.querySelector("#adding-btn")
+const questionHeader = document.querySelector(".placeholder")
+const answerLabels = document.querySelectorAll(".answer .label")
+const answerContainers = document.querySelectorAll(".answer")
+
+//Game stats
+let gameQuestions = [];
+let currentIndex = 0;
+let score = 0;
+let toggleButtons = true;
+
 //Big questions variable 
 let questions = [
     {
@@ -90,4 +103,53 @@ function getQuestions(questions, num = 10) {
     return shuffle.slice(0, num)
 };
 
-console.log(getQuestions(questions, 10))
+//Starting the game
+startButton.addEventListener("click", startGame);
+
+
+function startGame() {
+    gameQuestions = getQuestions(questions, 10);
+    currentIndex = 0;
+    score = 0;
+    
+    startButton.style.display = "none";
+    addButton.style.display = "none"
+    showQuestion()
+}
+
+function showQuestion() {
+    const currentQuestion = gameQuestions[currentIndex];
+    questionHeader.textContent = currentQuestion.question;
+    
+    currentQuestion.options.forEach((opt, i) => {
+        if (answerLabels[i]) {
+            answerLabels[i].textContent = opt;
+            answerContainers[i].onclick = () => handleAnswer(opt);
+        }
+    });
+}
+
+function handleAnswer(selected) {
+    const questionPick = gameQuestions[currentIndex];
+    if (selected === questionPick.answer) {
+        score++;
+    }
+    
+    currentIndex++;
+    if (currentIndex < gameQuestions.length) {
+        showQuestion();
+    } else {
+        endGame();
+    }
+}
+
+function endGame() {
+    questionHeader.textContent = `Game Over! You got ${score}/${gameQuestions.length} questions right!`;
+    answerLabels.forEach(btn => (btn.textContent = "-----"));
+    answerContainers.forEach(btn => (btn.onclick = null));
+    // if (toggleButtons) {
+    //     addButton.addEventListener("click", startGame);
+    // } else {
+    //     startButton.addEventListener("click", startGame)
+    // }
+}
