@@ -8,6 +8,47 @@ const addButton = document.querySelector("#adding-btn")
 const questionHeader = document.querySelector(".placeholder")
 const answerLabels = document.querySelectorAll(".answer .label")
 const answerContainers = document.querySelectorAll(".answer")
+const formArea = document.querySelector("#question-form")
+const submitQuestion = document.querySelector("#submit-question")
+
+addButton.addEventListener("click", () => {
+    startButton.style.display = "none"
+    addButton.style.display = "none"
+    answerContainers.forEach(btn => btn.style.display = "none")
+
+    formArea.style.display = "block";
+})
+
+submitQuestion.addEventListener("click", () => {
+    const newQ = document.querySelector("#new-question").value.trim();
+    const optA = document.querySelector("#optA").value.trim();
+    const optB = document.querySelector("#optB").value.trim();
+    const optC = document.querySelector("#optC").value.trim();
+    const optD = document.querySelector("#optD").value.trim();
+    const newAns = document.querySelector("#new-answer").value.trim();
+    const options = [optA, optB, optC, optD]; //Variable to make else if easier to write
+
+    if (!newQ || !optA || !optB || !optC || !optD || !newAns) {
+        questionHeader.textContent = "Error, please fill out all spots";
+        return;
+    } else if (!options.includes(newAns)) {
+        questionHeader.textContent = "Error, please have answer match an option"
+        return;
+    }
+
+    questions.push({
+        question: newQ,
+        options: [optA, optB, optC, optD],
+        answer: newAns
+    })
+
+    formArea.style.display = "none";
+    startButton.style.display = "inline-block";
+    addButton.style.display = "inline-block";
+    answerContainers.forEach(btn => btn.style.display = "inline-block");
+    questionHeader.textContent = "Welcome to the Video Game Trivia website!";
+
+})
 
 //Game stats
 let gameQuestions = [];
