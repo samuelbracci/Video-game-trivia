@@ -6,11 +6,11 @@ Questions should range from having most be easy and general knowledge with maybe
 #1:What color is Pikachu from Pokemon?
 A:Blue
 B:Orange
-C:Yellow
+C:Yellow (A)
 D:Black
 
 #2:What is the most sold video game of all time?
-A:Minecraft
+A:Minecraft (A)
 B:Persona 5 
 C:GTA 5
 D:Skyrim
@@ -19,41 +19,41 @@ D:Skyrim
 A:Switch
 B:Steam Deck
 C:Xbox
-D:Playstation
+D:Playstation (A)
 
 #4:What was the first video game ever created? 
-A:Tennis for Two
+A:Tennis for Two (A)
 B:Donkey Kong
 C:Super Mario Bros
 D:Pong
 
 #5:Which was the first ever video game console ever made and sold commercially?
 A:NES (Nintendo Entertainment System)
-B:Magnavox Odyssey
+B:Magnavox Odyssey (A)
 C:Atari
 D:Gameboy
 
 #6:What is Sonics signature ability?
 A:To cast magic powers
 B:To jump high and stomp on enemies
-C:To run really fast
+C:To run really fast (A) 
 D:To play poker really well
 
 #7:What is Marios profession?
 A:Chef
 B:Accountant
-C:Plumber
+C:Plumber (A)
 D:Prince
 
 #8:Which of these video game series is known to be very hard?
-A:Dark Souls
+A:Dark Souls (A)
 B:Kirby
 C:Minecraft
 D:Mario
 
 #9:Which game first introduced the character Waluigi?
 A:Mario party 3
-B:Mario Tennis
+B:Mario Tennis (A)
 C:Mario Kart: Double Dash
 D:Super Smash Bros Melee
 
@@ -61,34 +61,34 @@ D:Super Smash Bros Melee
 A:Dark Blue
 B:Green
 C:Yellow
-D:Red
+D:Red (A)
 
-#11:Which of the follow is NOT a Nintendo console
+#11:Which of the following is NOT a Nintendo console?
 A:Switch
 B:Gamecube
-C:Xbox
+C:Xbox (A)
 D:Wii
 
-#12:
-A:
-B:
-C:
-D:
+#12:What is the name of the princess that Mario rescues time and time again?
+A:Peach (A)
+B:Zelda
+C:Samus
+D:Daisy
 
-#13:
-A:
-B:
-C:
-D:
+#13:Which is the most popular puzzle game of all time?
+A:Warios woods 
+B:Picross
+C:Dr.Mario
+D:Tetris (A)
 
-#14:
-A:
-B:
-C:
-D:
+#14:What item does Mario use to power up?
+A:Chaos Emeralds 
+B:Mushroom (A)
+C:Diamond sword
+D:Soul
 
-#15:
-A:
-B:
-C:
-D:
+#15:Which of the following is NOT a character from Team Fortress 2
+A:The Scout
+B:The Medic
+C:The Knight (A)
+D:The Spy
