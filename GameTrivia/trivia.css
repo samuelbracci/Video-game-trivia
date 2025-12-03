@@ -156,8 +156,7 @@ body {
 
 .option:focus {
   outline: none;
-  border-color: var(--focus);
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--focus) 40%, transparent);
+  border-color: var(--outline);
 }
 
 /* Footer */
